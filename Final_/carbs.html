@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>
+    SERRA BOSCA FINAL PROJECT
+  </title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Serra Bosca" />
+  <style>
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+      dl { margin-left: 3ex;}
+      di { font-weight: bolder;}
+  </style>
+    <link rel='stylesheet' href='main.css'>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"> </script>
+ <script src="carbs.js"> </script>
+    
+</head>
+    
+<body>
+<h1> PET "FOOD" </h1>
+<div class="sidebar">
+    <ul style='list-style-type: square;'>
+        <li> <a href="main.html"> Why This Project </a> </li>
+        <li> <a href="about.html"> About Pet Food </a> </li>
+        <li> <a href="carbs.html"> Calculate Carbohydrate Levels in Your Pet Food </a> </li>
+        <li> <a href="mistakes.html"> Common Mistakes </a></li>
+        <li> <a href="sources.html"> Some Sources for Research </a></li>
+    </ul></div>
+
+<div class="middle"> 
+    
+    <p> AAFCO states under its labelling requirements that guaranteed analysis for minimum percent of protein and fat “are always required” and adds that dog food manufacturers “may include voluntary guarantees for other nutrients.” Carbohydrates are unfortunately fallen under this “other nutrients” and never guaranteed by the manufactures except for some premium dog food brands.To calculate the carbohydrate levels in your pets' current food enter the percentages on your pet food package below. If your package doesn't display ash content put 8. Dog foods typically contains five to eight percent ash. </p>
+   
+<table> 
+    <tr> <td class="label"> <label for="protein">  Proteins:</label> </td> 
+        <td> <input type="text" name="protein" id="protein"> </td>
+        <td> </td>
+        <td rowspan="4"> <textarea id="carbs" cols=25 rows=10> </textarea> </td></tr> 
+     <tr> <td class="label"> <label for="fat">  Fats:</label> </td> 
+        <td> <input type="text" name="fat" id="fat"> </td></tr> 
+     <tr> <td class="label"> <label for="moisture">  Moisture:</label></td> 
+        <td> <input type="text" name="moisture" id="moisture"> </td></tr> 
+     <tr> <td class="label"> <label for="ash"> Ash:</label></td> 
+        <td> <input type="text" name="ash" id="ash"> </td></tr> 
+    <tr> <td> <button onclick='calculate_carbs()' > Calculate </button></td></tr>
+    <tr> <td> <button id='back' onclick="history.back();"> Back </button> </td> </tr>
+    </table>
+    </div>
+<div class="right"> 
+    
+    <img src='dogcat.jpg' id='pic' style='height: 200px; width: 180px;'> 
+    <button style='margin: 2px; border-color: palevioletred; background-color: lightcoral'
+            onclick='$("#pic").attr("src","Emma.jpg")'>My Cat </button> 
+    <button style='margin: 2px; border-color: yellowgreen; background-color: palegreen;' 
+            onclick='$("#pic").attr("src","Coffee.jpg")'>My Dog </button>
+    
+</div>    
+
+    <footer style="border: 1px solid gray; margin: 3ex; position: fixed; width: 5%; bottom:0;"> <i>S.Bosca</i> </footer>
+
+</body>
+</html>

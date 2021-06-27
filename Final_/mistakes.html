@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>
+    SERRA BOSCA FINAL PROJECT
+  </title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Serra Bosca" />
+  <style>
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+      dl { margin-left: 3ex;}
+      di { font-weight: bolder;}
+  </style>
+    <link rel='stylesheet' href='main.css'>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"> </script>
+</head>
+    
+<body>
+<h1> PET "FOOD" </h1>
+<div class="sidebar">
+    <ul style='list-style-type: square;'>
+        <li> <a href="main.html"> Why This Project </a> </li>
+        <li> <a href="about.html"> About Pet Food </a> </li>
+        <li> <a href="carbs.html"> Calculate Carbohydrate Levels in Your Pet Food </a> </li>
+        <li> <a href="mistakes.html"> Common Mistakes </a></li>
+        <li> <a href="sources.html"> Some Sources for Research </a></li>
+    </ul></div>
+    
+<div class="right"> 
+        
+    <img src='dogcat.jpg' id='pic' style='height: 200px; width: 180px;'> 
+    <button style='margin: 2px; border-color: palevioletred; background-color: lightcoral'
+            onclick='$("#pic").attr("src","Emma.jpg")'>My Cat </button> 
+    <button style='margin: 2px; border-color: yellowgreen; background-color: palegreen;' 
+            onclick='$("#pic").attr("src","Coffee.jpg")'>My Dog </button>
+    
+</div>  
+
+<div class="middle"> 
+    
+    <img src="coffeeyard.jpg" style='height: 340px; width: 300px; float: right; margin: 3ex;'> 
+    <h2> Common Mistakes When Feeding Raw </h2>
+    <ul> 
+        <li> Did not complete enough research about raw feeding. </li>
+        <li> Quickly rushing through the transition phases. </li>
+        <li> Not adding any raw bones to the diet or feeding too much bones.</li>
+        <li> Providing inappropriate and unsafe bones.</li>
+        <li> Over complicating calculations for feeding amounts.</li>
+        <li> Adding too many supplements to the diet.</li>
+        <li> Not balancing or customizing the diet. </li>
+    </ul>
+
+    <h2> Common Mistakes When Feeding Home Cooked </h2>
+    <ul> 
+        <li> Bad or missing ingredients - nutritionally unbalanced.</li>
+        <li> Not doing enough research. </li>
+        <li> Using bad, untrusted resources when doing research. </li>
+        <li> Feeding cooked bones is really dangerous. </li>
+        <li> Not providing necessary vitamins and minerals.</li>
+    
+    </ul> <br>
+    <button id='back' onclick="history.back();" style="bottom: "> Back </button>  </div>
+
+    <footer style="border: 1px solid gray; margin: 3ex; position: fixed; width: 5%; bottom:0;"> <i>S.Bosca</i> </footer>
+    </body>
+</html>
+

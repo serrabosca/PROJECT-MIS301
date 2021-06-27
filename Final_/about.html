@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>
+    SERRA BOSCA FINAL PROJECT
+  </title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Serra Bosca" />
+  <style>
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+      dl { margin-left: 3ex;}
+      di { font-weight: bolder;}
+  </style>
+    <link rel='stylesheet' href='main.css'>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"> </script>
+    </head>    
+  <body>  
+    <h1> PET "FOOD" </h1>
+    <div class="sidebar">
+    <ul style='list-style-type: square;'>
+        <li> <a href="main.html"> Why This Project </a> </li>
+        <li> <a href="about.html"> About Pet Food </a> </li>
+        <li> <a href="carbs.html"> Calculate Carbohydrate Levels in Your Pet Food </a> </li>
+        <li> <a href="mistakes.html"> Common Mistakes </a></li>
+        <li> <a href="sources.html"> Some Sources for Research </a></li>
+    </ul></div>
+
+<div class="middle"> 
+     <h2 style="margin-left: 5ex;"> About Pet Food </h2>
+    <ul style="margin-left: 2ex;"> <li> <b> <i> A study by the National Research Council (NSC) of the National Academy of Sciences </i></b> found that today’s kibble foods in average contain 18 to 32 percent protein, 8 to 22 percent fat, and 46 to 74 percent carbs. The study further states that while dogs have a need for proteins and fats, they have no need for carbs. This means that on average, the required nutrients, proteins and fats, compose less than half of a commercial dog food; while non-required carbs compose more than half. And this fact is not even reflected in the labels. </li> 
+        <li> These high levels of carbs are not natural for our dogs. <b> <i> According to a 2015 article published in The British Journal of Nutrition, </i></b> diet of wolves, dogs’ ancestors, only include 1.5 to 4 percent carbs. </li>
+
+        <li> <b> <i> Feeding carbs way over its natural levels to our dogs expectedly cause many health issues including the following: </i></b>
+            <ol> <li> Overconsumption of carbs by dogs prevents proper taurine absorption, which in turn cause cardiomyopathy in dogs. </li>
+                 <li> It prevents proper Vitamin C absorption, which plays vital roles in growth and development as well as in a healthy immune system. Although the dog food manufacturers try to prevent this by including high dose of chemically-sourced Vitamin C in their dog foods, the carb levels in the commercial dog foods are so high that even these high doses of Vitamin C cannot properly absorbed by our dogs and lead to many Vitamin C deficiency related health problems in our dogs.</li>
+                <li> It causes weight problems. Association for Pet Obesity Prevention (APOP) state that 55.8% of the dogs in the US are overweight or obese. As all of us know, being overweight and obesity lead to countless other health problems and lower the quality of life, especially in the later life stages of our dogs. In addition, it is the leading cause of diabetes in dogs.</li>
+                <li> We can count many more health issues here, and they should not come as a surprise, considering more than half of what our dogs eat are the things they would not have normally eaten.</li></ol>
+        </li>
+        <li> Here are the Dr. Karen Becker's <i> - World's Most Followed Veterinarian - </i> list of best and worst pet foods: </li> </ul> <br>
+    
+    <iframe style="margin-left: 5ex;" width="600" height="400" src="https://www.youtube.com/embed/v0lFwdNm_Go" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    
+    
+     <button id='back' onclick="history.back();" style="bottom: "> Back </button>   
+</div>
+
+<div class="right"> 
+    
+    <img src='dogcat.jpg' id='pic' style='height: 200px; width: 180px;'> 
+    <button style='margin: 2px; border-color: palevioletred; background-color: lightcoral'
+            onclick='$("#pic").attr("src","Emma.jpg")'>My Cat </button> 
+    <button style='margin: 2px; border-color: yellowgreen; background-color: palegreen;' 
+            onclick='$("#pic").attr("src","Coffee.jpg")'>My Dog </button>
+    
+</div>    
+    <footer style="border: 1px solid gray; margin: 3ex; position: fixed; width: 5%; bottom:0;"> <i>S.Bosca</i> </footer>
+
+</body>
+    </html>

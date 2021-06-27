@@ -1,0 +1,54 @@
+
+ h1 {  text-align: center;
+       border: 1px solid green;
+       margin: 5px;
+       position: relative;
+       padding: 2px;;
+  }
+.sidebar { margin: 2ex;
+        left: 0;
+        width: 180px;
+        padding: 1ex;
+        position: absolute;
+        line-height: 1.5;
+        border: 1px solid red;
+    }
+.middle { left: 220px;
+        right: 220px;
+        margin: 2ex;
+        padding: 1ex;
+        position: absolute;
+        border: 1px solid blue;
+    
+}
+.right { right: 0;
+        width: 180px;
+        margin: 2ex;
+        padding: 1ex;
+        position: absolute;
+        border: 1px solid black;
+}
+
+#back { position: relative;
+        bottom: 1ex;
+        left: 1ex; 
+        margin=1ex;
+        margin-top: 2ex;
+}
+
+#food { display: none;
+        width: 380px;
+        height: 350px;
+        position: absolute;
+        
+}
+#x { display:none; 
+     position:absolute;
+     left: 400px;
+}
+#cats { display: none;
+        width: 380px;
+        height: 350px;
+        position: absolute;
+}
+

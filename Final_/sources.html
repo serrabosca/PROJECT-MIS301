@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>
+    SERRA BOSCA FINAL PROJECT
+  </title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Serra Bosca" />
+  <style>
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+      dl { margin-left: 3ex;}
+      di { font-weight: bolder;}
+  </style>
+    <link rel='stylesheet' href='main.css'>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"> </script>
+    <script src="guide.js"> </script>
+</head>
+    
+<body>
+<h1> PET "FOOD" </h1>
+<div class="sidebar">
+    <ul style='list-style-type: square;'>
+        <li> <a href="main.html"> Why This Project </a> </li>
+        <li> <a href="about.html"> About Pet Food </a> </li>
+        <li> <a href="carbs.html"> Calculate Carbohydrate Levels in Your Pet Food </a> </li>
+        <li> <a href="mistakes.html"> Common Mistakes </a></li>
+        <li> <a href="sources.html"> Some Sources for Research </a></li>
+    </ul></div>
+    
+<div class="right"> 
+        
+    <img src='dogcat.jpg' id='pic' style='height: 200px; width: 180px;'> 
+    <button style='margin: 2px; border-color: palevioletred; background-color: lightcoral'
+            onclick='$("#pic").attr("src","Emma.jpg")'>My Cat </button> 
+    <button style='margin: 2px; border-color: yellowgreen; background-color: palegreen;' 
+            onclick='$("#pic").attr("src","Coffee.jpg")'>My Dog </button>
+    
+</div>   
+    
+    <div class="middle"> 
+        <h2> A GUIDE ABOUT PORTIONS </h2>
+         <p style="margin: 2ex;"> 
+     If you don't know how much to feed your pet, you can use <button style='cursor: pointer' onclick="show_img()"> this </button> image as a guide for dogs and <button style="cursor:pointer;" onclick="showimg()"> this </button> for cats. <i> Note that this is just an estimate. Only you can know how much to feed your pet. If they have a health condition consult your vet. If they are overweight feed less, if they are underweight feed more. Pregnant or nursing females will need 2-3 times more food than they normally would. Puppies' and kittens' needs change every month. </i>
+    </p>
+        <img src="food.png" id="food" > 
+        <button id='x' onclick='hide_img()'> X </button>
+        <img src="cats.png" id="cats" >
+       
+        
+   <h2> SOME WEBSITES </h2>
+    <dl>
+        <di> Dr Karen Becker - The Most Followed Veterinerian in the World </di>
+            <dd> <a href="https://healthypets.mercola.com/"> >> https://healthypets.mercola.com/ </a>
+        </dd> 
+        <di> Dogs Naturally </di>
+            <dd> <a href="https://www.dogsnaturallymagazine.com/"> >> https://www.dogsnaturallymagazine.com/ </a> </dd>
+        <di> Concious Cat </di> 
+        <dd> <a href="https://consciouscat.net/"> >> https://consciouscat.net/ </a> </dd>
+        <di> Feline Nutrition </di>
+            <dd> <a href="https://feline-nutrition.org/"> >> https://feline-nutrition.org/ </a> </dd>
+    </dl>
+         <h2> SOME BOOKS </h2>
+         <dl> 
+        <di>  Give Your Dog a Bone <i> by</i> Dr. Ian Billinghurst </di> 
+            <dd>  Dr. Billinghurst is considered one of the world’s leading experts on the subject.This book is the first popular book to promote the idea of feeding dogs raw food and meaty bones.</dd>
+        <di> Raw Dog Food Make it Easy For You and Your Dog <i> by</i> Carina Beth MacDonald </di>
+            <dd>  This book covers all the basics that a beginning raw feeder needs to know: what bony parts to feed, other foods to include in the diet, preparation, and how much to feed. Also talks about customizing the diet based on age and size, problem solving, and answers to common questions. </dd>
+        <di> Dr Becker's Real Food for Healthy Dogs and Cats <i> by </i> Dr Karen Becker - Beth Taylor </di>
+            <dd> Based on the ancestral diets of dogs and cats, this book provides a rotation plan and recipes for a meat-based diet that includes appropriate levels of vegetables, fruits and supplements to complete the diet, analyzed to make sure that nutrition needs are met.</dd>  
+    </dl>
+    <span id="pictures">
+    <img src="billinghurst.jpg" style='width: 120px;'> <img src="becker.jpg" style="width: 100px;">
+     <img src="barf.jpg" style="width: 100px;">
+         <img src="bones.jpg" style="height: 140px;"> <br></span>
+       
+ <button id='back' onclick="history.back();"> Back </button>   
+</div>
+    
+    
+
+    <footer style="border: 1px solid gray; margin: 3ex; position: fixed; width: 5%; bottom:0;"> <i>S.Bosca</i>
+</footer>
+</body>
+</html>
